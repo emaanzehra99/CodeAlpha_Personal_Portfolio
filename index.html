@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@4.0.8/css/line.min.css">
+</head>
+
+<body>
+    <!-- Nav Bar -->
+    <div class="container">
+        <nav id="header">
+            <div class="nav-logo">
+                <p class="nav-name">Logo</p>
+            </div>
+            <div class="nav-menu" id="myNavMenu">
+                <ul class="nav_menu_list">
+                    <li class="nav_list">
+                        <a href="#home" class="nav-link active-link">Home</a>
+                        <div class="circle"></div>
+                    </li>
+
+                    <li class="nav_list">
+                        <a href="#about" class="nav-link">About</a>
+                        <div class="circle"></div>
+                    </li>
+
+                    <li class="nav_list">
+                        <a href="#projects" class="nav-link">Projects</a>
+                        <div class="circle"></div>
+                    </li>
+
+                    <li class="nav_list">
+                        <a href="#contact" class="nav-link">Contact</a>
+                        <div class="circle"></div>
+                    </li>
+                </ul>
+            </div>
+            <!-- Dark Mode -->
+            <div class="mode">
+                <div class="sun-moon" id="toggle-switch">
+                    <i class="fa fa-moon" id="moon"></i>
+                    <i class="fa fa-sun" id="sun"></i>
+                </div>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+
+        <!-- main heading -->
+
+
+        <main class="wrapper">
+            <section class="featured-bx" id="home">
+                <div class="featured-text">
+                    <div class="hello">
+                        <p>Hello I'm</p>
+                    </div>
+                    <div class="featured-name">
+                        <span class="typedText">
+                        </span>
+                    </div>
+                    <div class="text-info">
+                        <p>My name is Emaan! I'm a web developer with 1+ years of experience.</p>
+                    </div>
+                    <div class="text-btn">
+                        <button class="btn hire-btn">Hire Me!</button>
+                        <button class="btn">Download CV<i class="uil uil-file"></i></button>
+                    </div>
+                    <div class="social-icons">
+                        <div class="icon-circle">
+                            <div class="icon"><i class="uil uil-instagram"></i></div>
+                            <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
+                            <div class="icon"><i class="uil uil-behance-alt"></i></div>
+                            <div class="icon"><i class="uil uil-github-alt"></i></div>
+                        </div>
+                    </div>
+                    <div class="featured-img">
+                        <div class="img">
+                            <!-- <img src="image girl.png" alt=""> -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- About Section  -->
+            <section class="section" id="about">
+                <div class="top-header">
+                    <h1>About Me</h1>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="about-info">
+                            <figure class="about-me">
+                                <figcaption>
+                                    <img src="image girl.png" alt="" class="profile" />
+                                    <h2>WEB DEVELOPER</h2>
+                                    <p>My name is Emaan! I'm a web developer with 1+ years of experience</p>
+                            </figure>
+                            <button class="hire-me-btn">Hire Me</button>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <div class="skill-bx">
+                            <span class="title">HTML</span>
+                            <div class="skill-bar html">
+                                <span class="skill-per">
+                                    <span class="tool-tip">82%</span>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="skill-bx">
+                            <span class="title">CSS</span>
+                            <div class="skill-bar css">
+                                <span class="skill-per">
+                                    <span class="tool-tip">88%</span>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="skill-bx">
+                            <span class="title">JAVASCRIPT</span>
+                            <div class="skill-bar">
+                                <span class="skill-per javascript">
+                                    <span class="tool-tip">77%</span>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="skill-bx">
+                            <span class="title">PYTHON</span>
+                            <div class="skill-bar">
+                                <span class="skill-per python">
+                                    <span class="tool-tip">45%</span>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="skill-bx">
+                            <span class="title">BOOTSTRAP</span>
+                            <div class="skill-bar">
+                                <span class="skill-per bootstrap">
+                                    <span class="tool-tip">67%</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Project Box  -->
+            <section class="section" id="projects">
+                <div class="top-header">
+                    <h1>Projects</h1>
+                </div>
+                <div class="project-container">
+                    <div class="project-bx">
+                        <i class="uil uil-briefcase-alt"></i>
+                        <h3>Completed</h3>
+                        <label>5+ Completed Projects</label>
+                    </div>
+
+                    <div class="project-bx">
+                        <i class="uil uil-users-alt"></i>
+                        <h3>Clients</h3>
+                        <label>50+ Happy Clients</label>
+                    </div>
+
+                    <div class="project-bx">
+                        <i class="uil uil-award"></i>
+                        <h3>Experience</h3>
+                        <label>1+ year in web development</label>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Box -->
+             <section class="section" id="contact">
+                <div class="top-header">
+                    <h1>Let's Collaborate As A Team!</h1>
+                    <span>Do you have a creative project idea? Contact me Here</span>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="contact-info">
+                            <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+                            <p><i class="uil uil-envelope"></i>Email: CodeGraspers@gmail.com</p>
+                            <p><i class="uil uil-phone"></i>Phone: 012357372</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-control">
+                            <div class="form-inputs">
+                                <input type="text" class="input-field" placeholder="Your Name">
+                                <input type="text" class="input-field" placeholder="Your Email">
+                            </div>
+                            <div class="text-area">
+                                <input type="text" class="input-subject" placeholder="Subject">
+                                <textarea placeholder="Message"></textarea>
+                            </div>
+                            <div class="form-btn">
+                                <button class="btn">Send<i class="uil uil-message"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </section>
+        </main>
+         <!-- Footer Section  -->
+          <footer>
+            <div class="middle-footer">
+                <ul class="footer-menu">
+                    <li class="footer_menu_list">
+                        <a href="#home">Home</a>
+                    </li>
+
+                    <li class="footer_menu_list">
+                        <a href="#about">About</a>
+                    </li>
+
+                    <li class="footer_menu_list">
+                        <a href="#projects">Projects</a>
+                    </li>
+
+                    <li class="footer_menu_list">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-social-icons">
+                <div class="icon"><i class="uil uil-instagram"></i></div>
+                <div class="icon"><i class="fa-brands fa-linkedin-in icon"></i></div>
+                <div class="icon"><i class="uil uil-behance-alt"></i></div>
+                <div class="icon"><i class="uil uil-github-alt"></i></div>
+            </div>
+            <div class="bottom-footer">
+                <p>Copyright &copy; <a href="#home" style="text-decoration: none;">CodeGraspers</a> - All rights reserved 2024</p>
+            </div>
+          </footer>
+    </div> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" 
+    integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js" 
+    integrity="sha512-Kr+RPfLjQ71E0cJ9nseJ6jwTrnmMnuSPnnsVQQ/ZYYCjOHKfJcWj8ILICXnvf9A7ZQChNzIbr9x/ZAxA6xAZlQ==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
